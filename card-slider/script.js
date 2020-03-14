@@ -58,12 +58,33 @@ window.addEventListener('wheel', function (event) {
 });
 
 
-
-// window.addEventListener('wheel', function (event) {
-//   // console.log(event.deltaY)
-//   if (event.deltaY < 0) {
-//     console.log('scrolling up');
-//   } else if (event.deltaY > 300) {
-//     console.log('scrolling down');
-//   }
-// });
+var ts;
+window.addEventListener('touchstart', function (e) {
+  ts = e.touches[0].clientY;
+});
+window.addEventListener('touchmove', function (e) {
+  if (animating) return;
+  animating = true;
+  var te = e.touches[0].clientY;
+  if (ts > te) {
+    // next
+    console.log('down');
+    index += 1;
+  } else {
+    console.log('up');
+    index -= 1;
+  }
+  if (index < 1)
+    index = 5;
+  else if (index > 5)
+    index = 1;
+  $('.slider__warpper').find('.flex__container[data-slide=' + index + ']').addClass('flex--preStart');
+  $('.flex--active').addClass('animate--end');
+  setTimeout(function () {
+    $('.flex--preStart').removeClass('animate--start flex--preStart').addClass('flex--active');
+    $('.animate--end').addClass('animate--start').removeClass('animate--end flex--active');
+  }, 800);
+  setTimeout(function () {
+    animating = false;
+  }, 1800)
+});
