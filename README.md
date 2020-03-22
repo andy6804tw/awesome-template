@@ -8,7 +8,7 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
         <tr>
             <td>
                 <img src="card-slider/screenshot/demo.gif" width="300px"><br>
-                <a href="https://andy6804tw.github.io/awesome-template/card-slider">page-preloader</a>
+                <a href="https://andy6804tw.github.io/awesome-template/card-slider">card-slider</a>
             </td>
             <td>
                 <!-- <img src="SB admin/screenshot/demo.gif" width="300px"><br>
