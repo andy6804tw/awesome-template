@@ -1,0 +1,558 @@
+@font-face {
+    font-family: 'Canela';
+    src: url('https://rawcdn.githack.com/ricardoolivaalonso/Feinkoch/1a9843dce0cdcb756abaed876e99d9f6b6dae438/public/fonts/Canela-Thin-Web.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+@font-face {
+    font-family: 'Korpus-A';
+    src: url('https://rawcdn.githack.com/ricardoolivaalonso/Feinkoch/1a9843dce0cdcb756abaed876e99d9f6b6dae438/public/fonts/KorpusGrotesk-A.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+@font-face {
+    font-family: 'Korpus-B';
+    src: url('https://rawcdn.githack.com/ricardoolivaalonso/Feinkoch/1a9843dce0cdcb756abaed876e99d9f6b6dae438/public/fonts/KorpusGrotesk-B.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: block;
+}
+
+// ***** Colors *****
+$white: #ffffff;
+$black: #242424;
+$gray: #ededed;
+$gray-b: #F8F8F8;
+$green: #B4C8C6;
+$blue: #8edbed;
+$gap: 20px;
+$gap-v: 35px;
+$gap-h: 50px;
+
+
+$transition: .3s ease;
+
+$mq1: 770px;
+$mq2: 1024px;
+$mq3: 1200px;
+$mq4: 1400px;
+// *****
+@mixin flex($display, $justify, $align, $direction, $wrap) {
+	display: $display;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+}
+// *****
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+// *****
+body{
+    font-family: 12px;
+    font-family: 'Korpus-A', sans-serif;
+    color: $black;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+h1{
+    font-family: "Canela", Times, serif;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+
+    @media(min-width: $mq1){
+        max-width: 400px;
+        font-size: 50px;
+        line-height: 57px;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+}
+h2{
+    font-size: 30px;
+    line-height: 37px;
+    font-weight: 400;
+}
+input{ font-family: 'Korpus-A', sans-serif; }
+img{ max-width: 100%; }
+ul{ list-style: none; }
+a{
+    position: relative;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $black;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $black;
+        transition: $transition;
+    }
+    &:hover::after{
+        left: 100%;
+        width: 0%;
+        transition: $transition;
+    }
+}
+// *****
+.main{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: $gap;
+    transition: $transition;
+    background-color: $white;
+    z-index: 2000;
+
+    @media(min-width: $mq1){
+        height: 120px;
+        padding: $gap-v $gap-h;
+    }
+    @media(min-width: $mq2){
+        height: 207px;
+        padding: $gap-v $gap-h 0;
+    }
+}
+.banner{
+    @include flex(flex, center, center, column, wrap);
+    width: 100%;
+    margin-top: 80px;
+    background-color: $gray-b;
+
+    @media(min-width: $mq1){ margin-top: 120px; }
+    @media(min-width: $mq2){
+        @include flex(flex, center, center, row-reverse, nowrap);
+        margin-top: 207px;
+        height: 53vw;
+    }
+    @media(min-width: $mq3){ height: 50vw;}
+    @media(min-width: $mq4){ height: 45vw; }
+}
+.recipe{
+    @include flex(flex, center, center, column, wrap);
+    width: 100%;
+    padding: $gap * 4 $gap;
+    border-bottom:  1px solid $gray;
+
+    @media(min-width: $mq1){ padding: $gap * 4 $gap-h; }
+}
+.news{
+    @include flex(flex, center, center, column, wrap);
+    width: 100%;
+    position: relative;
+    padding: $gap * 4 $gap;
+    background-color: $gray-b;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        width: calc(100vw - 100px);
+        height: 100%;
+        background-color: $gray-b;
+        z-index: -1;
+    }
+
+    @media(min-width: $mq1){
+        @include flex(flex, flex-start, flex-start, row, nowrap);
+        padding: $gap * 4 $gap-h;
+    }
+    @media(min-width: $mq2){
+        justify-content: center;
+        padding: $gap * 6 $gap-h $gap * 4;
+    }
+}
+.newsletter{
+    @include flex(flex, center, center, column, wrap);
+    padding: $gap 0 0;
+    background-color: $white;
+
+    @media(min-width: $mq1){ padding: $gap-v $gap-h $gap-v * 4; }
+    @media(min-width: $mq2){ @include flex(flex, flex-start, stretch, row, wrap); }
+}
+.footer{
+    width: 100%;
+    padding: $gap * 3 $gap $gap * 4;
+    background-color: $gray-b;
+
+    @media(min-width: $mq1){ @include flex(flex, flex-start, flex-start, row, wrap); }
+    @media(min-width: $mq2){ padding: $gap-v $gap-h; }
+}
+// *****
+.icon{
+    object-fit: contain;
+    width: 30px;
+    &-n{
+        width: 130px;
+        margin-bottom: $gap;
+    }
+}
+.button{
+    font-size: 17px;
+    line-height: 18px;
+    padding: 12px 36px;
+    border: 1px solid $black;
+    border-radius: 2px;
+    text-transform: none;
+    transition: $transition;
+    &:hover{
+        background-color: $black;
+        color: $white;
+        transition: $transition;
+    }
+    &::after{ content: none;}
+}
+
+.palette{
+    display: flex;
+    justify-content: space-between;
+    width: 24px;
+    &__color{
+        height: 6px;
+        width: 6px;
+        border-radius: 50%;
+    }
+    /****************/
+    &-container{ @include flex(flex, center, center, row, wrap); }
+
+    &-item{
+        @include flex(flex, center, center, row, wrap);
+        margin: 3px;
+        padding: 4px 10px;
+        border-radius: 2px;
+        border: 1px solid $gray;
+        &:hover{
+            border: 1px solid $black;
+            transition: $transition;
+            cursor: pointer;
+        }
+        &__bg{
+            display: flex;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: $green;
+            margin-right: 10px;
+        }
+        &__name{
+            font-family: 'Korpus-B', sans-serif;
+            font-size: 16px;
+            line-height: 28px;
+            font-weight: 400;
+        }
+    }
+}
+.recipe{
+    background-color: $white;
+    &__title{
+        margin-bottom: $gap;
+        @media(min-width: $mq1){
+            font-size: 40px;
+            line-height: 42px;
+        }
+    }
+    &-list{
+        display: flex;
+        width: 100%;
+        margin: $gap * 2 0;
+        overflow: hidden;
+    }
+    &-scroll{
+        display: flex;
+        overflow-x: scroll;
+        @media(min-width: $mq2){ overflow: hidden; }
+    }
+    &-item{
+        @include flex(flex, flex-start, flex-start, column, wrap);
+        max-width: 65vw;
+        margin-right: $gap * 2;
+        flex-shrink: 0;
+        @media(min-width: $mq1){ max-width: 50%; }
+        @media(min-width: $mq2){ max-width: calc(25% - 30px ); }
+        &__bg{
+            overflow: hidden;
+            transition: .15s;
+            cursor: pointer;
+            &:hover .recipe-item__img{
+                transform: scale(1.025);
+                transition: $transition;
+            }
+        }
+        &__img{
+            object-fit: cover;
+            max-width: 100%;
+        }
+        &__name{
+            font-size: 22px;
+            line-height: 26px;
+            margin: $gap 0;
+        }
+    }
+}
+
+.header{
+    &-container{
+        @include flex(flex, space-between, center, row, wrap);
+        width: 100%;
+        @media(min-width: $mq2){
+            margin: 0 auto;
+            max-width: 1400px;
+        }
+    }
+    &__logo{
+        object-fit: contain;
+        width: 90px;
+        opacity: 1;
+        transition: $transition .15s;
+        @media(min-width: $mq1){ width: 120px; }
+    }
+    &__menu{ @include flex(flex, center, center, row, nowrap); }
+    &__txt{
+        font-size: 20px;
+        line-height: 23px;
+    }
+    &__search{
+        @include flex(flex, flex-end, center, row-reverse, nowrap);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        padding: 0;
+        background-color: $white;
+        border-top: 1px solid $gray;
+        z-index: 2000;
+
+        @media(min-width: $mq1){
+            height: 82px;
+            padding: 2px $gap-h;
+         }
+        @media(min-width: $mq2){
+            flex-direction: row;
+            position: relative;
+            margin-top: $gap;
+            padding: 0;
+            border-bottom: 1px solid $gray;
+        }
+    }
+    &__input{
+        width: calc(100% - 50px);
+        height: 56px;
+        font-size: 24px;
+        padding: 2px $gap;
+        border: none;
+        outline: none;
+        color: lighten($black, 40);
+        &::placeholder{ color: lighten($black, 40); }
+    }
+}
+
+.banner{
+    &__info{
+        @include flex(flex, center, center, column, wrap);
+        position: relative;
+        height: 46vmax;
+        padding: $gap;
+
+
+        @media(min-width: $mq2){
+            height: 100%;
+            width: 35%;
+            &::before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                height: 10vw;
+                width: 2px;
+                background-color: rgba($black, .5);
+            }
+        }
+    }
+    &__title{ margin-top: $gap * 1.25; }
+    &__description{
+        margin: $gap * 1.25 0;
+        font-size: 20px;
+        line-height: 23px;
+
+        @media(min-width: $mq2){
+            max-width: 300px;
+            text-align: center;
+        }
+    }
+    &__img{
+        width: 100%;
+        height: 37vmax;
+        background-image: url("https://github.com/ricardoolivaalonso/Feinkoch/blob/master/public/img/banner.jpg?raw=true");
+        background-repeat: no-repeat;
+        background-size: cover ;
+        background-position: center;
+        @media(min-width: $mq1){ height: 60vw; }
+        @media(min-width: $mq2){
+            height: 100%;
+            width: 65%;
+        }
+    }
+
+}
+
+.news{
+    &__item{
+        @include flex(flex, center, center, column, wrap);
+        margin-bottom: $gap * 4;
+        &:nth-last-of-type(1){ margin-bottom: 0; }
+        @media(min-width: $mq1){
+            &:nth-of-type(1){ margin-right: $gap-h / 2; }
+            &:nth-of-type(2){ margin-left: $gap-h / 2; }
+        }
+        @media(min-width: $mq2){ width: 28%; }
+    }
+
+    &__date{
+        margin: $gap * 3 0 $gap ;
+        font-size: 12px;
+        letter-spacing: 1.2px;
+    }
+    &__title{
+        font-family: "Canela", Times, serif;
+        font-size: 30px;
+        line-height: 37px;
+        text-align: center;
+        @media(min-width: $mq2){
+            font-size: 40px;
+            line-height: 42px;
+        }
+    }
+    &__description{
+        margin: $gap / 2 0 $gap * 2;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+    }
+}
+.newsletter{
+
+    &__item,
+    &__form{
+        @include flex(flex, center, center, column, wrap);
+        padding: $gap * 3 $gap;
+        width: 100%;
+        @media(min-width: $mq2){
+            width: 50%;;
+            &--100{ width: 100%; }
+        }
+    }
+    &__form{
+        background-color: $gray;
+        padding: inherit 0;
+    }
+    &__item:nth-last-of-type(1){ background-color: $green; }
+
+    &__input,
+    &__button{
+        width: 100%;
+        height: 50px;
+        padding: 0 $gap;
+        margin: 10px 0;
+        font-size: 16px;
+        border: 1px solid $black;
+        outline: none;
+        background-color: transparent;
+    }
+    &__button{ width: auto; }
+    &__input{
+        border: none;
+        text-align: center;
+        letter-spacing: 1.2px;
+        font-size: 24px;
+    }
+    &__description{
+        font-size: 20px;
+        line-height: 30px;
+        font-family: "Canela", Times, serif;
+        text-align: center;
+        margin-bottom: $gap;
+        @media(min-width: $mq2){ width: 70%; }
+    }
+}
+
+.footer{
+    &-container{
+        margin: 0 auto;
+        @include flex(flex, flex-start, flex-start, column, wrap);
+        @media(min-width: $mq1){ @include flex(flex, flex-start, flex-start, row, wrap); }
+    }
+    &__list{
+        width: 100%;
+        @media(min-width: $mq1){
+            width: calc( (100% / 3 - ( #{$gap-h} * 2) ) );
+            max-width: 300px;
+            margin-right: $gap-h;
+            &:nth-last-of-type(1){ margin-right: 0; }
+        }
+    }
+    &__title{
+        display: flex;
+        width: 100%;
+        margin-bottom: $gap / 2;
+        padding: $gap 0 ;
+        font-family: 'Korpus-B', sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        border-bottom: 1px solid $gray;
+    }
+    &__link{
+        font-size: 15px;
+        line-height: 25px;
+        font-family: 'Korpus-B', sans-serif;
+        text-transform: none;
+        letter-spacing: normal;
+        cursor: pointer;
+        &::after{ content: none; }
+    }
+    &-palette{ margin-top: $gap * 2; }
+}
+.palette-title{
+    width: 100%;
+    text-align: center;
+    margin-bottom: $gap;
+    @media(min-width: $mq1){
+        width: auto;
+        margin-bottom: 0;
+        margin-right: $gap;
+    }
+}
+
+.is-header-hidden{
+    @media(min-width: $mq2){
+        transform: translateY(-125px);
+        transition: $transition;
+    }
+}
+.is-logo-hidden{
+
+    @media(min-width: $mq2){
+        opacity: 0;
+        transform: scale(.8);
+        transition: $transition;
+    }
+}
