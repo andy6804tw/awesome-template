@@ -1,0 +1,36 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+    color: white;
+    font-family: 'Noto Sans TC', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(69,16,138);
+    background: linear-gradient(54deg, rgba(69,16,138,1) 0%, rgba(61,6,95,1) 35%, rgba(16,5,77,1) 100%);
+}
+
+.section-nav nav{
+    color: white;
+}
+
+.section-banner h1{
+    font-size: 38px;
+    color: white;
+    font-weight: bold;
+}
+.section-banner p{
+    color: white;
+    font-weight: 300;
+}
+.section-banner .button{
+    color: white;
+    font-size: 16px;
+    border-radius: 22px;
+    background: rgb(122,34,202);
+    background: linear-gradient(270deg, rgba(122,34,202,1) 0%, rgba(42,246,255,1) 100%);
+    text-decoration: none;
+}
+.section-banner img{
+    width: 100%;
+    height: auto;
+}
