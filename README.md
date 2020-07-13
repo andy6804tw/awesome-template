@@ -16,13 +16,13 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
             </td>
             <td>
                 <img src="api-application-programming-interface/screenshot/demo.png" width="300px"><br>
-                <a href="https://andy6804tw.github.io/awesome-templatet/api-application-programming-interface">Sidebar Collapse</a>
+                <a href="https://andy6804tw.github.io/awesome-template/api-application-programming-interface">Sidebar Collapse</a>
             </td>
         </tr>
         <tr>
             <td>
-                <!-- <img src="fancy-dashboard/screenshot/demo.png" width="300px"><br>
-                <a href="https://andy6804tw.github.io/awesome-template/fancy-dashboard">fancy dashboard</a> -->
+                <img src="data-protection/screenshot/demo.png" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-template/data-protection">fancy dashboard</a>
              </td>
         </tr>
     </tbody>
