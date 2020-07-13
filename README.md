@@ -15,8 +15,8 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <a href="https://andy6804tw.github.io/awesome-template/landing-page-with-parallax">landing-page-with-parallax</a>
             </td>
             <td>
-                <!-- <img src="Sidebar Collapse/screenshot/demo.gif" width="300px"><br>
-                <a href="https://andy6804tw.github.io/awesome-templatet/Sidebar Collapse">Sidebar Collapse</a> -->
+                <img src="api-application-programming-interface/screenshot/demo.png" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-templatet/api-application-programming-interface">Sidebar Collapse</a>
             </td>
         </tr>
         <tr>
