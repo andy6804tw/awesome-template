@@ -24,9 +24,7 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <img src="data-protection/screenshot/demo.png" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/data-protection">data-protection</a>
              </td>
-        </tr>
-        <tr>
-            <td>
+             <td>
                 <img src="digital-face/screenshot/demo.png" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/digital-face">digital-face</a>
              </td>
