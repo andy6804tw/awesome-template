@@ -1,5 +1,7 @@
 window.onload = () => {
-  document.querySelector('.loader').style.opacity = 0;
+  setTimeout(function(){
+    document.querySelector('.loader').style.opacity = 0;
+  }, 1200)
   const menu = document.querySelector('.menu');
 
   menu.addEventListener('click', () =>
