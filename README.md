@@ -28,6 +28,10 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <img src="digital-face/screenshot/demo.png" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/digital-face">digital-face</a>
              </td>
+             <td>
+                <img src="asymmetrical-layout/screenshot/demo.png" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-template/asymmetrical-layout">asymmetrical-layout</a>
+             </td>
         </tr>
     </tbody>
 </table>
