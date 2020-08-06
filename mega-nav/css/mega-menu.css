@@ -39,10 +39,11 @@ body {
     justify-content:center;
   }
   .menu-mobile {
-    display: none;
-    padding: 20px;
+    /* display: none;
+    padding: 20px; */
+    color: white;
   }
-  .menu-mobile:after {
+  /* .menu-mobile:after {
     content: "\f394";
     font-family: "Ionicons";
     font-size: 2.5rem;
@@ -52,8 +53,9 @@ body {
     top: 50%;
     transform: translateY(-25%);
     color: white;
-  }
+  } */
   .menu-mobile:hover{
+    color: white;
     text-decoration: none;
   }
   .menu-dropdown-icon:before {
@@ -191,9 +193,9 @@ body {
     .menu-container {
       width: 100%;
     }
-    .menu-mobile {
+    /* .menu-mobile {
       display: block;
-    }
+    } */
     .menu-dropdown-icon:before {
       display: block;
     }
