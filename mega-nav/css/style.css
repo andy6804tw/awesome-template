@@ -1,0 +1,8 @@
+.section-header {
+	color: white;
+	background-color: rgb(67, 46, 9);
+}
+.section-header img{
+	max-width: 200px;
+	width: 100%;
+}
