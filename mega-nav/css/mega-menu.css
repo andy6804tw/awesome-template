@@ -28,7 +28,7 @@ body {
   .menu-container {
     width: 100%;
     margin: 0 auto;
-    background: rgb(67, 46, 9);
+    /* background: rgb(67, 46, 9); */
   }
   .menu-container a {
     color: #fff;
@@ -70,9 +70,10 @@ body {
     display: none;
     cursor: pointer;
     float: right;
-    padding: 1.5em 2em;
-    background: #fff;
-    color: #333;
+    padding: 20px 2em;
+    /* background: #fff; */
+    border: 1px solid #fff;
+    color: #fff;
   }
   .menu > ul {
     margin: 0 auto;
@@ -96,7 +97,7 @@ body {
   }
   .menu > ul > li {
     float: left;
-    background: rgb(67, 46, 9);
+    /* background: rgb(67, 46, 9); */
     padding: 0;
     margin: 0;
   }
