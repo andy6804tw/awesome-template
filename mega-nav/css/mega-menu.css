@@ -54,6 +54,12 @@ body {
     transform: translateY(-25%);
     color: white;
   } */
+  .test{
+    /* display:flex; */
+  /* align-items:center; */
+  /* text-align: right; */
+  /* justify-content:center; */
+  }
   .menu-mobile:hover{
     color: white;
     text-decoration: none;

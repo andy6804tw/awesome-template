@@ -9,7 +9,7 @@ $(document).ready(function() {
     $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
     //Checks if drodown menu's li elements have anothere level (ul), if not the dropdown is shown as regular dropdown, not a mega menu (thanks Luka Kladaric)
   
-    // $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">&nbsp</a>");
+    $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">&nbsp</a>");
   
     //Adds menu-mobile class (for mobile toggle menu) before the normal menu
     //Mobile menu is hidden if width is more then 959px, but normal menu is displayed
@@ -42,10 +42,13 @@ $(document).ready(function() {
   // 持續偵測螢幕大小自適應RWD
 function onScreen() {
   const menuContainer=document.getElementById("menuContainer");
+  const menuMobile=document.getElementById("menuMobile");
   if (Number(document.body.clientWidth) < 943) {
     menuContainer.classList.remove("center");
+    menuMobile.classList.remove("d-none");
   } else {
     menuContainer.classList.add("center");
+    menuMobile.classList.add("d-none");
   }
 }
 
