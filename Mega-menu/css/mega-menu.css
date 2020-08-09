@@ -51,9 +51,9 @@
     position: relative;
     display: block;
     z-index: 510;
-    height: 54px;
-    padding: 0 20px;
-    line-height: 54px;
+    /* height: 54px; */
+    padding: 20px;
+    /* line-height: 54px; */
     
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
@@ -72,79 +72,16 @@
     transition: all .3s ease;
 }
 
-.nav > li:hover > a { background: #4b4441; }
+.nav > li:hover > a { 
+    border-bottom: 2px solid white;
+     padding-bottom: 5px;
+   /* margin-bottom: 3px; */
+}
 
 .nav > li:first-child > a {
     border-radius: 3px 0 0 3px;
     border-left: none;
 }
-
-/* Search Form */
-.nav > li.nav-search > form {
-    position: relative;
-    width: inherit;
-    height: 54px;
-    z-index: 510;
-    border-left: 1px solid #4b4441;
-}
-
-.nav > li.nav-search input[type="text"] {
-    display: block;
-    float: left;
-    width: 1px;
-    height: 24px;
-    padding: 15px 0;
-    line-height: 24px;
-
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 13px;
-    color: #999999;
-    text-shadow: 0 0 1px rgba(0,0,0,.35);
-
-    background: #372f2b;
-
-    -webkit-transition: all .3s ease 1s;
-    -moz-transition: all .3s ease 1s;
-    -o-transition: all .3s ease 1s;
-    -ms-transition: all .3s ease 1s;
-    transition: all .3s ease 1s;
-}
-
-.nav > li.nav-search input[type="text"]:focus { color: #fcfcfc; }
-
-.nav > li.nav-search input[type="text"]:focus,
-.nav > li.nav-search:hover input[type="text"] {
-    width: 110px;
-    padding: 15px 20px;
-
-    -webkit-transition: all .3s ease .1s;
-    -moz-transition: all .3s ease .1s;
-    -o-transition: all .3s ease .1s;
-    -ms-transition: all .3s ease .1s;
-    transition: all .3s ease .1s;
-}
-
-.nav > li.nav-search input[type="submit"] {
-    display: block;
-    float: left;
-    width: 20px;
-    height: 54px;
-    padding: 0 25px;
-    cursor: pointer;
-
-    background: #372f2b url(../img/search-icon.png) no-repeat center center;
-
-    border-radius: 0 3px 3px 0;
-
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -ms-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-.nav > li.nav-search input[type="submit"]:hover { background-color: #4b4441; }
 
 /* Menu Dropdown */
 .nav > li > div {
