@@ -45,7 +45,7 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <a href="https://andy6804tw.github.io/awesome-template/norwegian-municipality">norwegian-municipality</a>
             </td>
             <td>
-                <img src="matrix-bar/screenshot/demo.png" width="300px"><br>
+                <img src="matrix-bar/screenshot/demo.gif" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/matrix-bar">matrix-bar</a>
             </td>
         </tr>
