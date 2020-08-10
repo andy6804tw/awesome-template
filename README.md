@@ -40,6 +40,10 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <img src="personalise-portfolio/screenshot/demo.png" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/personalise-portfolio">personalise-portfolio</a>
             </td>
+            <td>
+                <img src="norwegian-municipality/screenshot/demo.png" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-template/norwegian-municipality">norwegian-municipality</a>
+            </td>
         </tr>
     </tbody>
 </table>
