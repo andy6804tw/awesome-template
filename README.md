@@ -49,5 +49,11 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <a href="https://andy6804tw.github.io/awesome-template/matrix-bar">matrix-bar</a>
             </td>
         </tr>
+        <tr>
+            <td>
+                <img src="image-slider/screenshot/demo.gif" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-template/image-slider">image-slider</a>
+            </td>
+        </tr>
     </tbody>
 </table>
