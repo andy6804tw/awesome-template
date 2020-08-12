@@ -21,3 +21,7 @@ function transform(index) {
   images.style.transform = `translateX(-${index * 100}%)`;
   colors.style.transform = `translateX(-${index * 100}%)`;
 }
+// 每隔3秒自動換下一張
+setInterval(function(){
+  right();
+},3000);
