@@ -54,6 +54,10 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <img src="image-slider/screenshot/demo.gif" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/image-slider">image-slider</a>
             </td>
+             <td>
+                <img src="travel-video-landing-page/screenshot/demo.gif" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-template/travel-video-landing-page">travel-video-landing-page</a>
+            </td>
         </tr>
     </tbody>
 </table>
