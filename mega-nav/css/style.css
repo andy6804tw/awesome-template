@@ -1,0 +1,15 @@
+
+.section-header {
+	color: white;
+	background-color: rgb(67, 46, 9);
+	/* background: url(https://image.freepik.com/free-photo/blurred-background-grocery-store_23-2148216105.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	height: 417px; */
+}
+.section-header img{
+	max-width: 200px;
+	width: 100%;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pokemon Slider</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:400,700'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="slider__warpper">
+  <div class="flex__container flex--pikachu flex--active" data-slide="1">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Strategic planning</p>
+        <h1 class="text--big">策略規劃</h1>
+        <p class="text--normal">
+          公司的策略常常聽起來很空洞？訂定的策略往往達不到？
+          透過理性而系統化的分析和思維方式，完整掌握企業的經營環境，從中有效地推衍出足以克敵致勝的策略構想、化為具體的執行方案，進而協助企業因應各種經營挑戰。
+        </p>
+      </div>
+      <p class="text__background">Plain</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img"
+      src="https://image.flaticon.com/icons/svg/1355/1355663.svg" />
+  </div>
+  <div class="flex__container flex--piplup animate--start" data-slide="2">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Information Delivery</p>
+        <h1 class="text--big">資訊投放</h1>
+        <p class="text--normal">作品完成之後，還需要良好的投放，才能讓目標客群接觸到。我們會根據自身的實務經驗，給予資訊投放的建議，讓更多人看到好作品！</p>
+      </div>
+      <p class="text__background">Information</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="https://image.flaticon.com/icons/svg/1497/1497565.svg" />
+  </div>
+  <div class="flex__container flex--blaziken animate--start" data-slide="3">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Content design</p>
+        <h1 class="text--big">內容設計</h1>
+        <p class="text--normal">內容設計確定資訊後，我們會運用我們的創意，把你的資訊，變成目標客群感興趣的內容！呈現的形式包含懶人包、影片、網站、簡報、繪本等等</p>
+      </div>
+      <p class="text__background">Content</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="https://image.flaticon.com/icons/svg/2232/2232688.svg" />
+  </div>
+  <div class="flex__container flex--dialga animate--start" data-slide="4">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">Web Design</p>
+        <h1 class="text--big">網頁設計</h1>
+        <p class="text--normal">形象網站一般稱呼為「官網」，主要是用來展示您公司行號有什麼樣的服務、費用、並提供聯絡表單或聯絡方式、位置或是品牌故事介紹等。</p>
+      </div>
+      <p class="text__background">Web</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="https://image.flaticon.com/icons/svg/1162/1162490.svg" />
+  </div>
+  <div class="flex__container flex--zekrom animate--start" data-slide="5">
+    <div class="flex__item flex__item--left">
+      <div class="flex__content">
+        <p class="text--sub">SEO Analysis</p>
+        <h1 class="text--big">搜尋引擎 <br>
+          最佳化</h1>
+        <p class="text--normal">由於不少研究發現，搜尋引擎的用戶往往只會留意搜尋結果最前面的幾個條目，所以不少網站都希望透過各種形式來影響搜尋引擎的排序，讓自己的網站可以有優秀的搜尋排名。</p>
+      </div>
+      <p class="text__background">SEO</p>
+    </div>
+    <div class="flex__item flex__item--right"></div>
+    <img class="pokemon__img" src="https://image.flaticon.com/icons/svg/2353/2353373.svg" />
+  </div>
+</div>
+
+<div class="slider__navi">
+  <a href="#" id="linkSlide1" class="slide-nav active" data-slide="1" onclick="clickedSlide(id)">pikachu</a>
+  <a href="#" id="linkSlide2" class="slide-nav" data-slide="2" onclick="clickedSlide(id)">piplup</a>
+  <a href="#" id="linkSlide3" class="slide-nav" data-slide="3" onclick="clickedSlide(id)">blaziken</a>
+  <a href="#" id="linkSlide4" class="slide-nav" data-slide="4" onclick="clickedSlide(id)">dialga</a>
+  <a href="#" id="linkSlide5" class="slide-nav" data-slide="5" onclick="clickedSlide(id)">zekrom</a>
+</div>
+
+<!-- <div style="height: 500px;">
+  ddfdfd
+</div> -->
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
