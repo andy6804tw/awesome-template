@@ -58,6 +58,10 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <img src="travel-video-landing-page/screenshot/demo.gif" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/travel-video-landing-page">travel-video-landing-page</a>
             </td>
+            <td>
+                <img src="video-landing-page/screenshot/demo.gif" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-template/video-landing-page">video-landing-page</a>
+            </td>
         </tr>
     </tbody>
 </table>
