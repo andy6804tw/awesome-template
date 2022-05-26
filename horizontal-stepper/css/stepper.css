@@ -1,0 +1,98 @@
+:root {
+    --prm-color: #0381ff;
+    --prm-gray: #dddddd;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+/* Progress circle 按鈕狀態 */
+.step-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    color: var(--prm-gray);
+    transition: .4s;
+    border: 2px solid var(--prm-gray);
+}
+.step-item.done .step-button,  .step-item.inprogress .step-button{
+    width: 40px;
+    height: 40px;
+    background-color: var(--prm-color);
+    border: 2px solid var(--prm-color);
+}
+.step-item.done .step-button{
+    color: var(--prm-gray);
+    text-indent: -999999px;
+    line-height: 0; 
+}
+.step-item.done .step-button:after {
+    text-indent: 0;
+    font-family: 'Font Awesome 5 Free';
+    content: "\f00c";
+    font-weight: 900;
+    color: white;
+    display: block;
+    line-height: initial;
+}
+.step-item.inprogress .step-button{
+    background-color: white;
+    color: var(--prm-color);
+}
+
+.step-item {
+    z-index: 10;
+    text-align: center;
+}
+
+.step-item .step-title{
+    font-size: 14px;
+    width: 84px;
+    color: var(--prm-gray);
+}
+
+.step-item.done .step-title{
+    color: var(--prm-color);
+}
+.step-item.inprogress .step-title{
+    color: #333;
+}
+
+#progress {
+  -webkit-appearance:none;
+    position: absolute;
+    width: 93%;
+    z-index: 5;
+    height: 2px;
+    margin-left: 25px;
+    margin-bottom: 18px;
+}
+
+/* to customize progress bar */
+#progress::-webkit-progress-value {
+    background-color: var(--prm-color);
+    transition: .5s ease;
+}
+
+#progress::-webkit-progress-bar {
+    background-color: var(--prm-gray);
+
+}
+
+@media screen and (max-width:575px) {
+    #progress{
+        margin-bottom: 0px;
+    }
+}
+@media screen and (max-width:991px) {
+    #progress{
+        width: 88%;
+    }
+}
