@@ -62,6 +62,12 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <img src="video-landing-page/screenshot/demo.gif" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/video-landing-page">video-landing-page</a>
             </td>
-        </tr>
+        </tr>  
+        <tr>
+            <td>
+                <img src="horizontal-stepper/screenshot/demo.gif" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-template/horizontal-stepper">horizontal-stepper</a>
+            </td>
+        </tr>  
     </tbody>
 </table>
