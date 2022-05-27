@@ -21,10 +21,9 @@
     color: var(--prm-gray);
     transition: .4s;
     border: 2px solid var(--prm-gray);
+    padding: 0;
 }
 .step-item.done .step-button,  .step-item.inprogress .step-button{
-    width: 40px;
-    height: 40px;
     background-color: var(--prm-color);
     border: 2px solid var(--prm-color);
 }
