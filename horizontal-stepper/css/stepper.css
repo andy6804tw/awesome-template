@@ -30,17 +30,14 @@
 }
 .step-item.done .step-button{
     color: var(--prm-gray);
-    text-indent: -999999px;
-    line-height: 0; 
+    font-size: 0;
 }
 .step-item.done .step-button:after {
-    text-indent: 0;
     font-family: 'Font Awesome 5 Free';
     content: "\f00c";
     font-weight: 900;
     color: white;
-    display: block;
-    line-height: initial;
+    font-size: 10px;
 }
 .step-item.inprogress .step-button{
     background-color: white;
