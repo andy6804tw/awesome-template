@@ -1,3 +1,6 @@
+/**
+ * 提交按鈕事件觸發
+ */
 function getResult() {
   // 取得多選區塊內容
   let question1List = [];
@@ -15,6 +18,9 @@ function getResult() {
   alert(`Multiple Select: ${question1List}\n Single Option: ${question2Value}`);
 }
 
+/**
+ * 為所有 input 按鈕添加點擊事件(偵測是否有點選)
+ */
 const inputButtons = document.querySelectorAll('input');
 Array.from(inputButtons).forEach((button, index) => {
   button.addEventListener('click', () => {
@@ -28,3 +34,10 @@ Array.from(inputButtons).forEach((button, index) => {
     }
   });
 });
+
+/**
+ * 清空選擇內容
+ */
+function reset(){
+  document.getElementById('btnSubmit').classList.add('disabled');
+}
