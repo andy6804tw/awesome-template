@@ -38,6 +38,6 @@ Array.from(inputButtons).forEach((button, index) => {
 /**
  * 清空選擇內容
  */
-function reset(){
+function resetEvent(){
   document.getElementById('btnSubmit').classList.add('disabled');
 }

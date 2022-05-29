@@ -68,6 +68,10 @@ All the projects are based on [Bootstrap4](http://startbootstrap.com/) framework
                 <img src="horizontal-stepper/screenshot/demo.gif" width="300px"><br>
                 <a href="https://andy6804tw.github.io/awesome-template/horizontal-stepper">horizontal-stepper</a>
             </td>
+            <td>
+                <img src="single-and-multiselect-buttons/screenshot/demo.gif" width="300px"><br>
+                <a href="https://andy6804tw.github.io/awesome-template/single-and-multiselect-buttons">single-and-multiselect-buttons</a>
+            </td>
         </tr>  
     </tbody>
 </table>
