@@ -1,6 +1,6 @@
 # Single and multiselect buttons
 
-
+![](./screenshot/demo.gif)
 
 
 ## Reference
